@@ -48,6 +48,7 @@ img {
     display: flex;
     width: 1158px;
     margin: 0 auto;
+    padding: 0 15px;
 }
 
 /* == PAGE HEADER == */
@@ -75,7 +76,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
-    padding-right: 76px;
+    margin-right: 76px;
 }
 
 .logo-studio {
@@ -150,7 +151,6 @@ img {
     color: #ffffff;
     max-width: 496px;
     margin-left: 331px;
-    margin-bottom: 48px;
 }
 
 .button-order {
@@ -169,6 +169,7 @@ img {
     min-width: 169px;
     height: 56px;
     border: none;
+    margin-top: 48px;
 }
 
 .button-order:hover,
@@ -177,6 +178,10 @@ img {
 }
 
 /* == SECTION 2 == */
+.first-section {
+    padding: 120px 0;
+}
+
 .visually-hidden {
     font-weight: 500;
     font-size: 20px;
@@ -197,8 +202,11 @@ img {
 
 .priorities {
     display: flex;
-    padding: 120px 0;
     gap: 24px;
+}
+
+.list-priorities {
+    width: calc((100% - 72px) / 4);
 }
 
 .title-priorities {
