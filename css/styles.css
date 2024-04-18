@@ -45,9 +45,9 @@ img {
 }
 
 .container {
-    max-width: 1158px;
+    display: flex;
+    width: 1158px;
     margin: 0 auto;
-    padding: 0 15px;
 }
 
 /* == PAGE HEADER == */
@@ -75,6 +75,7 @@ img {
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #4d5ae5;
+    padding-right: 76px;
 }
 
 .logo-studio {
@@ -86,7 +87,6 @@ img {
     align-items: center;
     flex-direction: row;
     gap: 40px;
-    padding-left: 76px;
 }
 
 .menu-link {
@@ -95,6 +95,7 @@ img {
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: #2e2f42;
+    padding: 24px 0;
     
 }
 
@@ -130,28 +131,31 @@ img {
     letter-spacing: 0.02em;
     color: #434455;
 }
-/* == MAIN CONTENT == */
+
+/* == SECTION 1 == */
 .main-slogan {
     background: #2e2f42;
     height: 600px;
     display: flex;
+    padding: 188px 0;
 }
 
 .slogan {
+    display: flex;
     font-weight: 700;
     font-size: 56px;
     line-height: 1.07;
     letter-spacing: 0.02em;
     text-align: center;
     color: #ffffff;
-    margin-top: 188px;
-    width: 496px;
-    justify-content: center;
+    max-width: 496px;
+    margin-left: 331px;
+    margin-bottom: 48px;
 }
 
 .button-order {
     font-family: "Roboto", sans-serif;
-    display: flex;
+    display: block;
     justify-content: center;
     align-items: center;
     font-weight: 500;
@@ -162,9 +166,9 @@ img {
     color: #ffffff;
     background: #4d5ae5;
     border-radius: 4px;
-    width: 169px;
+    min-width: 169px;
     height: 56px;
-    margin-top: 48px;
+    border: none;
 }
 
 .button-order:hover,
@@ -172,50 +176,54 @@ img {
     background: #404bbf;
 }
 
-/* == SECTION 1 == */
+/* == SECTION 2 == */
 .visually-hidden {
     font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2e2f42;
-        position: absolute;
-            width: 1px;
-            height: 1px;
-            margin: -1px;
-            border: 0;
-            padding: 0;
-            white-space: nowrap;
-            clip-path: inset(100%);
-            clip: rect(0 0 0 0);
-            overflow: hidden;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
 }
 
 .priorities {
     display: flex;
-    margin-top: 120px;
-    margin-bottom: 120px;
-    gap: 20px
+    padding: 120px 0;
+    gap: 24px;
 }
 
 .title-priorities {
     font-weight: 500;
-        font-size: 20px;
-        line-height: 1.2;
-        letter-spacing: 0.02em;
-        color: #2e2f42;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    width: calc((100% - 72px) / 4);
+    margin-bottom: 8px;
 }
 
 .text-priorities {
     font-weight: 400;
-        font-size: 16px;
-        line-height: 1.5;
-        letter-spacing: 0.02em;
-        color: #434455;
-        margin-top: 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    margin-top: 8px;
 }
-/* == SECTION 2 == */
+
+/* == SECTION 3 == */
+
 .second-section {
+    display: flex;
     background: #f4f4fd;
     padding: 120px 0;
 }
@@ -236,6 +244,11 @@ img {
     color: #2e2f42;
     margin-bottom: 72px;
 }
+
+.team-card {
+    padding: 32px 0;
+}
+
 .items-team {
     background: #ffffff;
     width: calc((100% - 72px) /4);
@@ -263,7 +276,7 @@ img {
     margin-bottom: 32px;
 }
 
-/* == SECTION 3 == */
+/* == SECTION 4 == */
 .title-portfolio {
     font-weight: 700;
     font-size: 36px;
@@ -272,8 +285,7 @@ img {
     text-align: center;
     text-transform: capitalize;
     color: #2e2f42;
-    margin-top: 120px;
-    margin-bottom: 72px;
+    padding: 120px 0 120px 0;
 }
 
 .list-portfolio {
@@ -285,6 +297,14 @@ img {
 
 .items-portfolio {
     margin-bottom: 120px;
+    width: calc((100% - 48px) / 3);
+}
+
+.portfolio-card {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
 }
 
 .name-portfolio {
